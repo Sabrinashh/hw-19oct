@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+    <div class="container my-4">
+        <div class="card container">
+            <div class="card-title">
+                <p class="h2">Todo List</p>
+            </div>
+            <div class="card-body">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Type what you want to do">
+                    <input type="datetime-local" class="form-control">
+                    <button class="input-group-text" id="todo">Add</button>
+                </div>
+                <ul id="list" class="list-group">
+                    <li class="list-group-item">
+                        <div class="row align-items-center">
+                            <p class="col-md-4 m-0">Task 1</p>
+                            <p class="col-md-4 m-0">2022-10-18 | 16:45</p>
+                            <div class="col-md-4 row justify-content-between">
+                                <button onclick="Done()" class="btn btn-success done-btn col-md-5">Done</button>
+                                <button onclick="this.parentElement.parentElement.parentElement.remove()" class="btn btn-danger col-md-5">Delete</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row align-items-center">
+                            <p class="col-md-4 m-0">Task 2</p>
+                            <p class="col-md-4 m-0">2022-10-18 | 16:45</p>
+                            <div class="col-md-4 row justify-content-between">
+                                <button onclick="Done()" class="btn btn-success done-btn col-md-5">Done</button>
+                                <button onclick="this.parentElement.parentElement.parentElement.remove()" class="btn btn-danger col-md-5">Delete</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row align-items-center">
+                            <p class="col-md-4 m-0">Task 3</p>
+                            <p class="col-md-4 m-0">2022-10-18 | 16:45</p>
+                            <div class="col-md-4 row justify-content-between">
+                                <button onclick="Done()" class="btn btn-success done-btn col-md-5">Done</button>
+                                <button onclick="this.parentElement.parentElement.parentElement.remove()" class="btn btn-danger col-md-5">Delete</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="assets/main.js"></script>
+</body>
+</html>
